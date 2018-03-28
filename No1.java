@@ -14,22 +14,20 @@ public class No1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner in=new Scanner(System.in);
+     Scanner in=new Scanner(System.in);
         System.out.println("Input :");
         int count=in.nextInt()+1;
         int n1=0,n2=1,n3=0,i;    
         System.out.println("Output :");
-        System.out.print(n2);  
-    
+        //System.out.print(n2);  
+        int jumlah=n2;
         for(i=2;i<count;++i){    
              n3=n1+n2;    
-             System.out.print(" "+n3);    
+             jumlah=jumlah+n3;    
              n1=n2;    
              n2=n3;    
         }    
+        System.out.println(jumlah);
         System.out.println();
-    }
     
 }
